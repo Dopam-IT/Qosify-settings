@@ -1,0 +1,183 @@
+
+# HTTP/HTTPS/QUIC
+tcp:80    browsing
+tcp:443   browsing
+udp:80    browsing
+udp:443   browsing
+
+
+
+# Microsoft (Download)
+dns:*1drv*                 bulk
+dns:*backblaze*            bulk
+dns:*backblazeb2*          bulk
+dns:*ms-acdc.office*       bulk
+dns:*onedrive*             bulk
+dns:*sharepoint*           bulk
+dns:*update.microsoft*     bulk
+dns:*windowsupdate*        bulk
+
+# MEGA (Download)
+dns:*mega*                 bulk
+
+# Dropbox (Download)
+dns:*dropboxusercontent*   bulk
+
+# Google (Download)
+dns:*drive.google*         bulk
+dns:*googleusercontent*    bulk
+
+# Steam (Download)
+dns:*steamcontent*         bulk
+
+# Epic Games (Download)
+dns:*download.epicgames*   bulk
+dns:*download2.epicgames*  bulk
+dns:*download3.epicgames*  bulk
+dns:*download4.epicgames*  bulk
+dns:*epicgames-download1*  bulk
+
+# BitTorrent
+tcp:6881-7000    bulk
+tcp:51413        bulk
+udp:6771         bulk
+udp:6881-7000    bulk
+udp:51413        bulk
+
+# Usenet
+tcp:119          bulk
+tcp:563          bulk
+
+
+# YouTube
+dns:*googlevideo*   besteffort
+
+# Facebook
+dns:*fbcdn*         besteffort
+
+# Twitch
+dns:*ttvnw*         besteffort
+
+# TikTok
+dns:*tiktok*        besteffort
+
+# Netflix
+dns:*nflxvideo*     besteffort
+
+# Amazon Prime Video
+dns:*aiv-cdn*       besteffort
+dns:*aiv-delivery*  besteffort
+dns:*pv-cdn*        besteffort
+
+# Disney Plus
+dns:*disney*        besteffort
+dns:*dssott*        besteffort
+
+# HBO
+dns:*hbo*           besteffort
+dns:*hbomaxcdn*     besteffort
+
+
+
+
+# SSH
+tcp:22    network_services
+
+# NTP
+udp:123   network_services
+
+# DNS
+tcp:53    network_services
+tcp:5353  network_services
+udp:53    network_services
+udp:5353  network_services
+
+
+
+
+
+
+
+# Live Streaming to YouTube Live, Twitch, Vimeo and LinkedIn Live
+tcp:1935-1936    broadcast_video
+tcp:2396         broadcast_video
+tcp:2935         broadcast_video
+
+
+
+
+# DNS over TLS (DoT)
+tcp:853   multimedia_conferencing
+udp:853   multimedia_conferencing
+
+# Zoom, Microsoft Teams, Skype and FaceTime (they use these same ports)
+udp:3478-3497    multimedia_conferencing
+
+# Zoom
+dns:*zoom*       multimedia_conferencing
+tcp:8801-8802    multimedia_conferencing
+udp:8801-8810    multimedia_conferencing
+
+# Skype
+dns:*skype*      multimedia_conferencing
+
+# FaceTime
+udp:16384-16387  multimedia_conferencing
+udp:16393-16402  multimedia_conferencing
+
+# GoToMeeting
+udp:1853         multimedia_conferencing
+udp:8200         multimedia_conferencing
+
+# Webex Meeting
+tcp:5004         multimedia_conferencing
+udp:9000         multimedia_conferencing
+
+# Jitsi Meet
+tcp:5349         multimedia_conferencing
+udp:10000        multimedia_conferencing
+
+# Google Meet
+udp:19302-19309  multimedia_conferencing
+
+# TeamViewer
+tcp:5938         multimedia_conferencing
+udp:5938         multimedia_conferencing
+
+# Voice over Internet Protocol (VoIP)
+tcp:5060-5061    telephony
+udp:5060-5061    telephony
+
+# Voice over WiFi or WiFi Calling (VoWiFi)
+udp:500          telephony
+udp:4500         telephony
+
+
+
+## NEW ADD PC
+
+# Teamspeak
+udp:9987		telephony
+tcp:10011 		network_services
+udp:10011 		network_services
+tcp:41144 		network_services
+udp:2010 		network_services
+tcp:30033 		bulk
+tcp:10022		network_services
+tcp:10080		network_services
+dns:*.teamspeak.com     network_services
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
