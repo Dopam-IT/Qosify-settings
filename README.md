@@ -1,0 +1,1 @@
+# Qosify-settings
